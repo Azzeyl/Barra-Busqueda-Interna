@@ -1,0 +1,180 @@
+/*jumbo trom*/
+
+.jumbotron{
+    margin-top: 20px;
+    background-image: url(https://i.ibb.co/G3kdq1v/673189.png);
+    background-size: cover;
+    color: white
+    
+}
+
+/*ESTILOS DE LOS PARRAFOS Y LA IMAGEN*/
+
+.main{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*PARA LA LINEA DE SEPARACION DE CADA ARTICULO IMPORTANTE*/
+.post{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #4D1414; /*BORDE*/
+}
+
+/*TITULO DEL ARTICULO*/
+.post .post-tittle a{
+    color: #991616;
+}
+
+/*MINIATURA O IMAGEN*/
+
+.post .thumb{
+    margin-right: 10px; /*MARGEN A LA DERECHA */
+    width: 40%; /*CONTENEDRO MIDE EL 40% OSEA EL CONTENIDO YA TIENE UN ESPACIO ESPECIFICADO*/
+
+}
+/**SE ORDENA EL TAMAÑO DE LA IMGEN SEGUN EL CONTENEDOR QUE ANTERIOR MENTE ISIMOS*/
+.post .thumb img{
+    width: 100%; /*ANCHO*/
+   
+}
+ 
+/*Color de botones de redes sociales*/
+
+.btn-link {
+    font-weight: 400;
+    color: #337ab7;
+
+}
+/*LOgo imagen del nombre de la barra*/
+.navbar-brand {
+    float: left;
+    height: 58px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 33px;
+}
+
+/*Color de letra de titulo*/
+.navbar-inverse .navbar-brand {
+    color: #9d9d9d;
+}
+ /*tamaño botones de barra*/
+
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+/*intento barra de busqueda*/
+
+#cover-ctn-search{
+    position: left;
+    right: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ctn-bars-search{
+    position: left;
+    top: 80px;
+    width: 20%;
+    background: #fff;
+    padding: 20px;
+}
+
+#ctn-bars-search input{
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+
+/*APARTE DE LA DE PRUEBA ORIGINAL*/
+/*Contenedor de la busqueda*/
+.content-search{
+    width: 100%; /*ancho*/
+    height: 100vh; /*altura*/
+    position: fixed;/*se mantenga asi arriba*/
+    top: 60px;/*separacion*/
+    left: 0;
+    display: no;/*para ocultarlo*/
+}
+
+/*tabla de busqueda la que importa*/
+.content-table{
+    width: 20%;/*tamño del cuadro de las busquedas*/
+    max-height: 200px; /*alto maximo*/
+    height: auto;
+    background: yellow;
+    margin-left: 1135px;/*margen a la izquierda de las busquedas*/
+    overflow-y: visible;
+    overflow-x: hidden;
+
+ 
+    
+}
+
+.content-table table{/*id de la tabla*/
+    width: 100%;
+}
+
+tbody tr td a{ /*las letras de busqueda*/
+    display: block; /*tipo bloque*/
+    padding: 10px;/*separacion de cada uno*/
+    color: blue;/*color de letras*/
+    text-decoration: none;
+}
+
+tbody tr td a:hover{ /*sombreado al poner el mouse*/
+    background: gray;
+}
+
+/*quitar letras feas dela barra importante*/
+
+#table_length, #table_filter, #table_info, #table_paginate{
+    display: none;
+}
+
+
+
+
+
+/*color del indice letras
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    background: aqua;
+}
+ /*color de los espacios entre letras del incide de animes
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: red; 
+}*/
+
+
+
+/*MEDIA QUERIE*/ /*RESPONCIVE*
+@media screen and (max-width: 768px){
+    .post .thumb {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
